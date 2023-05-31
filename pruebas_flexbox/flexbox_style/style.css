@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    
+
+    width: 500px;
+}
+
+.box {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
