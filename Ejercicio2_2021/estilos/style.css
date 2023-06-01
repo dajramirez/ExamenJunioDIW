@@ -23,7 +23,7 @@ header > img {
     transition: transform 1s, border-color 3s;
 }
 
-header > p {
+p {
     font-weight: bold;
 }
 
@@ -43,13 +43,14 @@ header > p {
 #zona_animacion > img{
     margin: 2px;
     width: 300px;
-    animation: animacion_imagen 3s;
+    /*animation: animacion_imagen 5s infinite;*/
 }
 
 @keyframes animacion_imagen {
     50% {
         transform: scale(0,0);
         translate: calc(50vw - 150px);
+        filter: invert(0%);
     }
 
     100% {
@@ -57,4 +58,34 @@ header > p {
         translate: calc(100vw - 300px);
         filter: invert(100%);
     }
+}
+
+#zona_jquery {
+    display: flex;
+    gap: 10px;
+}
+
+#botones {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 10px 0 10px 10px;
+}
+
+#botones > button {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#resultados_jquery {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 10px 10px 10px 0;
+}
+
+#salida_jquery {
+    text-align: center;
 }
