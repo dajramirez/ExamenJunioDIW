@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <title>DIW - DAW - PRUEBA 2</title>
 </head>
 
@@ -16,22 +16,22 @@
     <header class="bloque">
         <img id="imagen_persona" src="imágenes/persona.png" alt="Monigote que representa a una persona">
         <p>Darío Jesús Ramírez Romero</p>
-        <p>Sede: Málaga</p>
+        <p id="sede">Sede: Málaga</p>
     </header>
     <section id="zona_animacion" class="bloque">
-        <img src="imágenes/img_resultado.jpg">
+        <img id="imagen_resultado" src="imágenes/img_resultado.jpg">
     </section>
     <section id="zona_jquery" class="bloque">
-        <div id="botones" class="bloque">
+        <div id="botones" class="bloque columna">
             <h2>Botones de efectos jQuery</h2>
             <button type="button" id="boton1">Efecto 1</button>
             <button type="button" id="boton2">Efecto 2</button>
             <button type="button" id="boton3">Efecto 3</button>
             <button type="button" id="boton4">Efecto 4</button>
         </div>
-        <div id="resultados_jquery" class="bloque">
+        <div id="resultados_jquery" class="bloque columna">
             <p>Resultados jQuery</p>
-            <div id="salida_jquery"></div>
+            <div id="salida_jquery" class="columna"></div>
         </div>
     </section>
 </body>

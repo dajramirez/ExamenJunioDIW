@@ -40,7 +40,7 @@ p {
     display: flex;
 }
 
-#zona_animacion > img{
+#imagen_resultado{
     margin: 2px;
     width: 300px;
     /*animation: animacion_imagen 5s infinite;*/
@@ -65,10 +65,13 @@ p {
     gap: 10px;
 }
 
-#botones {
-    display: flex;
+.columna {
+    display:flex;
     flex-direction: column;
     text-align: center;
+}
+
+#botones {
     width: 50%;
     margin: 10px 0 10px 10px;
 }
@@ -79,13 +82,12 @@ p {
 }
 
 #resultados_jquery {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: space-evenly;
     width: 50%;
     margin: 10px 10px 10px 0;
 }
 
 #salida_jquery {
+    justify-content: center;
     text-align: center;
 }
