@@ -4,15 +4,26 @@
 
 .container {
     display: flex;
-    flex-flow: row wrap;
-    
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    gap: 2px;
 
-    width: 500px;
+    align-items: center;
+
+    width: 800px;
+    height: 400px;
 }
 
 .box {
     background-color: blue;
     color: white;
+    border: 1px solid black;
+
     width: 100px;
-    height: 100px;
 }
+
+
+#three {
+    margin-left: auto;
+}
+
