@@ -11,8 +11,13 @@ $(document).ready(function() {
         $('#sede').css('color', 'red');
     });
 
+    $('#boton3').on('click', function() {
+        $('header').slideUp(1500, function() {$('#imagen_persona').css('opacity', 0.3);});
+        $('header').slideDown(1500);
+    });
+
     $('#boton4').on('click', function() {
-        $('#imagen_resultado').css('border: 10px solid red; border-radius: 10px');
+        $('#imagen_resultado').css({'border': '5px solid red', 'border-radius': '10px'});
     });
 
 });
