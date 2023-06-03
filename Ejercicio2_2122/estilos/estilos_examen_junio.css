@@ -65,6 +65,7 @@ h1, h2{
     background-color: gold;
     border: 2px solid black;
     position:relative;
+    animation: objeto_inanimado 10s normal 5s 3;
 }
 
 
@@ -116,7 +117,62 @@ header {
 header > img {
     height: 60px;
 }
+
+#video_mas_canvas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#canvas_inicio {
+    transform: translateX(100px) translateY(50px);
+}
  
+@keyframes objeto_inanimado {
+    20% {
+        left: 200px;
+        top: 30px;
+        background-color: gold;
+        border-radius: 0;
+    }
+    40% {
+        left: 200px;
+        top: 100px;
+        background-color: gold;
+        border-radius: 0;
+    }
+    50% {
+        left: 290px;
+        top: 100px;
+        background-color: red; 
+        border-radius: 10px;
+    }
+    60% {
+        left: 380px;
+        top: 100px;
+        background-color: blue;
+        border-radius: 20px;
+    }
+    80% {
+        left: 380px;
+        top: 170px;
+        background-color: blue;
+        border-radius: 20px;
+    }
+    100% {
+        left: 200px;
+        top: 170px;
+        background-color: blue;
+        border-radius: 20px;
+    }
+}
 
+footer > h2 {
+    transition: color 2s ease-in-out, letter-spacing 4s ease-in;
+}
 
+footer > h2:hover {
+    color: goldenrod;
+    letter-spacing: 15px;
+}
 

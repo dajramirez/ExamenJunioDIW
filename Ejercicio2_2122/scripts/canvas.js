@@ -41,3 +41,29 @@ window.onload = function() {
 
 }
 
+$(document).ready(function () {
+
+    $("#opcion1").on("click", function () {
+        $(".imagen_ejercicio").css("border", "10px solid blue");
+        $("#cambios_aplicados").append("Opción 1 ejecutada<br>");
+    });
+
+    $("#opcion2").on("click", function () {
+        $(".imagen_ejercicio").css("filter", "grayscale(100%)");
+        $("#cambios_aplicados").append("Opción 2 ejecutada<br>");
+    });
+
+    $("#opcion3").on("click", function () {
+        $(".imagen_ejercicio").css({"width": "150px", "height": "80px"});
+        $("#cambios_aplicados").append("Opción 3 ejecutada<br>");
+    });
+
+    $("#opcion4").on("click", function () {
+        $(".imagen_ejercicio").fadeOut(function () {
+            $(".imagen_ejercicio").css("filter", "invert(100%)");});
+        $(".imagen_ejercicio").fadeIn();
+        $("#cambios_aplicados").append("Opción 4 ejecutada<br>");
+    });
+
+});
+
