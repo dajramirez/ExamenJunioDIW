@@ -4,8 +4,28 @@
 
 body {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 80px repeat(2, 1fr);
+
+    gap: 10px;
+
+    grid-template-areas:
+    "header header header"
+    "imagen animacion canvas"
+    "svg video jquery";
+}
+
+header {grid-area: header;}
+#imagen {grid-area: imagen;}
+#animacion {grid-area: animacion;}
+#canvas {grid-area: canvas;}
+#svg {grid-area: svg;}
+#video {grid-area: video;}
+#jquery {grid-area: jquery;}
+
+h1 {
+    color: purple;
+    text-align: center;
 }
 
 .bloque {
@@ -14,6 +34,89 @@ body {
 
 #img_hexagonos_perritos {
     width: 300px;
+}
+
+#animacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circulo {
+    position: relative;
+
+    height: 400px;
+    width: 400px;
+    border-radius: 150px;
+    background-color: transparent;
+}
+
+#div1, #div2 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    position: absolute;
+}
+
+#div1 {
+    background-color: chocolate;
+    top: 0;
+    left: 50%;
+    transform: translateX(-100%);
+    animation: div 10s linear 3;
+}
+
+#div2 {
+    background-color: chocolate;
+    top: 0;
+    left: 50%;
+    animation: div 10s linear 3 reverse;
+}
+
+@keyframes div {
+    0% {
+        top: 0%;
+        left: 50%;
+    }
+
+    8.33% {
+        top: 0%;
+        left: 33%;
+        background-color: cyan;
+    }
+
+    25% {
+        top: calc(50% - 50px);
+        left: calc(0% + 50px);
+        background-color: green;
+    }
+
+    41.66% {
+        top: calc(100% - 50px);
+        left: 33%;
+        background-color: blue;
+    }
+
+    58.33% {
+        top: calc(100% - 50px);
+        left: calc(66% + 50px);
+        background-color: red;
+    }
+    75% {
+        top: calc(50% - 50px);
+        left: calc(100% - 50px);
+        background-color: yellow;
+    }
+    91.66% {
+        top: 0;
+        left: 66%;
+        background-color: lime;
+    }
+    100% {
+        top: 0;
+        left: 33%;
+        background-color: lime;
+    }
 }
 
 @media screen and (max-width: 599px) {

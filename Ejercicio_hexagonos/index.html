@@ -6,20 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <script src="scripts/script.js"></script>
     <title>Hexágonos</title>
 </head>
 
 <body>
-    <header></header>
-    <section class="bloque">
+    <header class="bloque">
+        <h1>HEXÁGONOS</h1>
+    </header>
+    <section id="imagen" class="bloque">
         <img id="img_hexagonos_perritos" src="imágenes/hexagono_1200.jpg"
             alt="Figura de hexágonos con un perro en el hexágono superior y otro en el hexágono inferior">
     </section>
-    <section class="bloque"></section>
-    <section class="bloque"></section>
-    <section class="bloque"></section>
-    <section class="bloque"></section>
-    <section class="bloque"></section>
+    <section id="animacion" class="bloque">
+        <div id="circulo">
+            <div id="div1"></div>
+            <div id="div2"></div>
+        </div>
+    </section>
+    <section id="bloque_canvas" class="bloque">
+        <canvas id="canvas" width="400" height="400"></canvas>
+    </section>
+    <section id="svg" class="bloque">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox -250 -250 250 250>
+            <path 
+            d="m 50 10  
+                L 150 10 150 190 50 190 Z" 
+                stroke="red" 
+                fill="aqua" 
+                id="futuro-hexagono" />
+        </svg>
+    </section>
+    <section id="video" class="bloque">
+        <video src="vídeos/hexagonos.mp4" width="400" height="400" poster="imágenes/hexagono_600.jpg"></video>
+    </section>
+    <section id="jquery" class="bloque">
+        
+    </section>
 </body>
 
 </html>
